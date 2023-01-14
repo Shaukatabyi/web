@@ -2,11 +2,11 @@
 Результат сложения чисел 5 и 2 равен 7.*/
 const a = Number.parseFloat(prompt("Ведите первое число"));
 const b = Number.parseFloat(prompt("Ведите  второе число"));
-alert(`Результат сложения чисел ${a} и ${b} равен ${(sum(a, b)*10)/10}`);
+alert(`Результат сложения чисел ${a} и ${b} равен ${Math.round(sum(a, b)*100)/100}`);
 
 function sum(a, b) {
     return a + b;
 }
 
-//Math.round((*1000)/100)
+//((*1000)/100)
 
