@@ -1,0 +1,15 @@
+{"name":"Иван", "surname":"Иванов", "patronymic":"Иванович", "age":30, "birthplace": "Москва", "phone": 79267664848}
+	
+object		{6}
+		
+name	:	Иван
+		
+surname	:	Иванов
+		
+patronymic	:	Иванович
+		
+age	:	30
+		
+birthplace	:	Москва
+		
+phone	:	

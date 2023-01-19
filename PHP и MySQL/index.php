@@ -135,29 +135,25 @@ $workExperience = [
                 Опыт работы
           </h2>
 
-        <?php for ($i=0; $i < count($workExperience); $i++) { ?>
-            
-        
+        <?php for ($i=0; $i < count($workExperience); $i++) : ?>                 
           <div class="w3-container">
             <h5 class="w3-opacity"><b><?php echo $workExperience[$i]['name'];?></b></h5>
-            <h6 class="w3-text-teal">
+              <h6 class="w3-text-teal">
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>
                 <?php echo $workExperience[$i]['dateStart'];?> - 
                 <?php if ($i == 0): ?>
                      <span class="w3-tag w3-teal w3-round">
                      <?=$workExperience[$i]['dateEnd'];?>
                      </span>
-                    <?php else: ?>
+                <?php else: ?>
                      <?=$workExperience[$i]['dateEnd'];?>
-                <?php endif;?>
-               
-            </h6>
-
+                <?php endif;?>               
+              </h6>
             <p><?= $workExperience[$i]['description']?></p>
             <hr>
           </div>
-        <?php } ?>
-
+        <?php endfor ?>
+      </div>
          
         <div class="w3-container w3-card w3-white">
           <h2 class="w3-text-grey w3-padding-16"><i
